@@ -7,3 +7,34 @@
 // (This is called a 'getter' in Object Oriented Programming)
 
 // If you're stuck, take a look at the example class here for reference: https://www.geeksforgeeks.org/introduction-object-oriented-programming-javascript/#
+
+class Car {
+    constructor (Make, Model, Year, Color) {
+        this.make = Make;
+        this.model = Model;
+        this.year = Year;
+        this.color = Color;
+
+    }
+
+    getMake() {
+        return (`The car's name ${this.make} rocks!`)
+    }
+
+    getModel() {
+        return (`The latest model is ${this.model}`)
+    }
+
+    getYear() {
+        return (`production of the car started ${this.year}`)
+    }
+
+    getColor() {
+        return (`The color was an all time favourite ${this.color}`)
+    }
+
+    }
+
+let mycar = new Car ("Balablu", "APC", 2022, "Green")
+console.log(myCar)
+
